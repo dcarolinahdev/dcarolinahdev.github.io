@@ -42,5 +42,25 @@ button:hover
     color: #3b413f;
 }
 
-/* class .class */
-/* id #id */
+main
+{
+    width: auto;
+}
+
+section
+{
+    border: 10px dotted #344733;
+    margin: 5rem;
+    padding: 4rem 8rem;
+}
+
+.block
+{
+    border: 5px dotted #7cb379;
+    padding: 3rem;
+}
+
+.button-section
+{
+    border: 5px dotted #344733;
+}
