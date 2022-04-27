@@ -24,6 +24,12 @@ p.intro
     font-style: italic;
 }
 
+img.responsive
+{
+    width: 100%;
+    height: auto;
+}
+
 section
 {
     border: 10px dotted #344733;
@@ -34,12 +40,6 @@ section
 section.two-col
 {
     display: inline-flex;
-}
-
-img.responsive
-{
-    width: 100%;
-    height: auto;
 }
 
 .block
