@@ -51,7 +51,8 @@ section.two-col
 .button-section
 {
     border: 5px dotted #344733;
-    display: grid;
+    display: flex;
+    flex-direction: column;
 }
 
 .btn
