@@ -24,29 +24,6 @@ p.intro
     font-style: italic;
 }
 
-button
-{
-    box-shadow: inset 0px 1px 3px 0px #91b8b3;
-    background-color: rgb(88, 121, 109);
-    border-radius: 5px;
-    border: 1px solid #566963;
-    font-weight: bold;
-    font-size: 1.8rem;
-    color: white;
-    text-shadow: 0px -1px 0px #2b665e;
-    padding: 10px 20px;
-}
-
-button:hover
-{
-    color: #3b413f;
-}
-
-main
-{
-    width: auto;
-}
-
 section
 {
     border: 10px dotted #344733;
@@ -63,4 +40,22 @@ section
 .button-section
 {
     border: 5px dotted #344733;
+}
+
+.btn
+{
+    box-shadow: inset 0px 1px 3px 0px #91b8b3;
+    background-color: rgb(88, 121, 109);
+    border-radius: 5px;
+    border: 1px solid #566963;
+    font-weight: bold;
+    font-size: 1.8rem;
+    color: white;
+    text-shadow: 0px -1px 0px #2b665e;
+    padding: 10px 20px;
+}
+
+.btn:hover
+{
+    color: #3b413f;
 }
