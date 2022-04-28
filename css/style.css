@@ -41,6 +41,7 @@ section
 h1
 {
     margin-bottom: 1.5rem;
+    font-size: 3rem;
 }
 
 p
@@ -51,6 +52,7 @@ p
 span
 {
     font-style: italic;
+    font-size: 1.2rem;
 }
 
 /*.block
