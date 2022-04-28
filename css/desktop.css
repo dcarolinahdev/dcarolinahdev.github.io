@@ -1,0 +1,28 @@
+section
+{
+    margin: 5rem;
+    padding: 3rem;
+}
+
+section.intro
+{
+    display: inline-flex;
+}
+
+img.img-main
+{
+    width: 100%;
+}
+
+.btn
+{
+    font-size: 1.8rem;
+    padding: 10px 20px;
+    margin: 0.5rem;
+}
+
+.button-section
+{
+    padding: 4rem 2rem;
+    margin: 0;
+}
