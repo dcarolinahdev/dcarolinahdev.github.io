@@ -1,0 +1,51 @@
+/*--------------------------
+# General
+----------------------------*/
+:root {
+    --main-color-text: #272829;
+    --main-color-title: #173b6c;
+    --main-color-link: #149ddd;
+    --hover-color-link: #37b3ed;
+    --main-nav-text: #a8a9b4;
+    --main-nav-focus: #6f7180;
+
+    --main-purple-dark: #390c3e;
+    --back-purple-social: #6d2e5e;
+    --hover-purple-social: #c847aa;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.4rem;
+    text-align: justify;
+    color: var(--main-color-text);
+}
+
+a {
+  color: var(--main-color-link);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--hover-color-link);
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif;
+}
