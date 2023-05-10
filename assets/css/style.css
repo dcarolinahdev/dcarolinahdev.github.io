@@ -54,12 +54,25 @@ a:hover {
 }
 
 h1,
-h2,
+h2 {
+  color: var(--purple-1);
+  font-weight: 700;
+}
+
 h3,
-h4,
-h5,
-h6 {
-  font-family: "Raleway", sans-serif;
+h4 {
+  color: var(--purple-3);
+  font-weight: 600;
+}
+
+strong {
+  color: var(--purple-2);
+}
+
+ul {
+  list-style-type: none;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 
 /* ----------- navbar ----------- */
@@ -90,6 +103,114 @@ footer {
   color: white;
 }
 
+/* ----------- main ----------- */
+
+/*#portfolio,
+#contact,
+#about,
+#services {
+  border: 1px solid purple;
+}*/
+
+.me,
+.about > .row,
+.services,
+.services .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#about,
+#portfolio,
+#services,
+#contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.about,
+.about-text,
+.portfolio,
+.services,
+.services-text,
+.contact {
+  width: 80%;
+}
+
+/* me */
+
+.me h1,
+.me h3 {
+  color: white;
+}
+
+.me .card {
+  border: none;
+}
+
+.card-img-overlay {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  justify-content: center; /*v*/
+  align-items: center; /*v*/
+  /*margin: 0.5rem;
+  padding: 5%;*/
+  gap: 1rem;
+}
+
+/* about */
+
+.about ul li::before {
+  font-family:'Bootstrap-icons';
+  content: '\F633   ';
+  color: var(--purple-3);
+  font-size: 2rem;
+}
+
+.about-text {
+  padding: 5rem 0 3rem 0;
+}
+
+.two-column {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* portfolio */
+
+/* services */
+
+.services {
+  gap: 2rem;
+}
+
+.services-title {
+  align-self: flex-start;
+}
+
+.services-text {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.services-text .card {
+  width: 20vw;
+  min-height: 25vh;
+
+  -webkit-box-shadow: 0 0 3rem 0.5rem var(--purple-2);
+  -moz-box-shadow: 0 0 3rem 0.5rem var(--purple-2);
+  box-shadow: 0 0 3rem 0.5rem var(--purple-2);
+}
+
+/* contact */
+
 /* ----------- footer ----------- */
 
 .footer-me {
@@ -97,12 +218,6 @@ footer {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-}
-
-footer ul {
-  list-style-type: none;
-  margin-bottom: 0;
-  padding-left: 0;
 }
 
 footer ul li::before {
@@ -118,6 +233,9 @@ footer ul li::before {
 
 /* phones: <576px (xs | col-x) */
 @media only screen and (max-width: 575px) {
+  .me {
+    min-height: 80vh;
+  }
   .footer-me {
     padding: 3.5vh 0;
     min-height: 20vh;
@@ -127,6 +245,9 @@ footer ul li::before {
 
 /* tablets: 576px a 768px (sm | col-sm-x) */
 @media only screen and (min-width: 576px) {
+  .me {
+    min-height: 80vh;
+  }
   .footer-me {
     padding: 3.5vh 0;
     min-height: 20vh;
