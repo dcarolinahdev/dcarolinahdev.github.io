@@ -30,10 +30,17 @@ html {
 }
 
 body {
-    font-family: "Open Sans", sans-serif;
-    font-size: 1.4rem;
-    text-align: justify;
-    color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.4rem;
+  text-align: justify;
+
+  background-color: var(--purple-pink);
+  color: var(--text-color);
 }
 
 a {
@@ -55,6 +62,8 @@ h6 {
   font-family: "Raleway", sans-serif;
 }
 
+/* ----------- navbar ----------- */
+
 .navbar {
   --bs-navbar-color: var(--purple-1);
   --bs-navbar-disabled-color: var(--purple-2);
@@ -67,7 +76,8 @@ h6 {
   --bs-navbar-toggler-border-color: var(--purple-1);
 }
 
-.navbar-toggler {
+.navbar-toggler,
+footer {
   background-color: var(--purple-3);
 }
 
@@ -75,6 +85,70 @@ h6 {
   padding-left: 2rem;
 }
 
-.navbar-toggler-icon {
+.navbar-toggler-icon,
+footer {
   color: white;
+}
+
+/* ----------- footer ----------- */
+
+.footer-me {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer ul {
+  list-style-type: none;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+footer ul li::before {
+  font-family:'Bootstrap-icons';
+  content: '\F1C9   ';
+}
+
+.credits {
+  text-align: center;
+}
+
+/* ------ MEDIA ------ */
+
+/* phones: <576px (xs | col-x) */
+@media only screen and (max-width: 575px) {
+  .footer-me {
+    padding: 3.5vh 0;
+    min-height: 20vh;
+    font-size: smaller;
+  }
+}
+
+/* tablets: 576px a 768px (sm | col-sm-x) */
+@media only screen and (min-width: 576px) {
+  .footer-me {
+    padding: 3.5vh 0;
+    min-height: 20vh;
+    font-size: smaller;
+  }
+}
+
+/* small pc: 768px a 992px (md | col-md-x) */
+@media only screen and (min-width: 768px) {
+}
+
+/* medium pc: 992px a 1200px (lg | col-lg-x) */
+@media only screen and (min-width: 992px) {
+  .footer-me {
+    padding: 4vh 0;
+  }
+}
+
+/* large pc: 1200px a 1400 (xl | col-xl-x) */
+@media only screen and (min-width: 1200px) {
+}
+
+/* large pc: 1400 + (xl | col-xl-x) */
+@media only screen and (min-width: 1400px) {
 }
