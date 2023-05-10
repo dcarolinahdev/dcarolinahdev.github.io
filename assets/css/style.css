@@ -49,3 +49,11 @@ h5,
 h6 {
   font-family: "Raleway", sans-serif;
 }
+
+.navbar {
+  --bs-navbar-toggler-padding-y: 1rem;
+  --bs-navbar-toggler-padding-x: 1rem;
+  --bs-navbar-toggler-font-size: 1.6rem;
+  --bs-navbar-toggler-icon-bg: none;
+  --bs-navbar-toggler-border-radius: 50%;
+}
