@@ -1,0 +1,63 @@
+/*--------------------------
+# General
+----------------------------*/
+:root {
+  --text-color: rgb(41, 41, 41);
+  --titles-color: #5b176c;
+  --link-color: #b114dd;
+  --link-hover-color: #ed37d5;
+
+  --purple-1: #390c3e;
+  --purple-2: #6d2e5e;
+  --purple-3: #c847aa;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.4rem;
+    text-align: justify;
+    color: var(--text-color);
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--link-hover-color);
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif;
+}
+
+.navbar {
+  --bs-navbar-toggler-padding-y: 1rem;
+  --bs-navbar-toggler-padding-x: 1rem;
+  --bs-navbar-toggler-font-size: 1.6rem;
+  --bs-navbar-toggler-icon-bg: none;
+  --bs-navbar-toggler-border-radius: 50%;
+  --bs-navbar-toggler-border-color: var(--purple-1);
+
+}
+
+.navbar-toggler:hover {
+  color: var(--purple-1);
+}
