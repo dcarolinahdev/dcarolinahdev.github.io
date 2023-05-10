@@ -2,14 +2,21 @@
 # General
 ----------------------------*/
 :root {
-  --text-color: rgb(41, 41, 41);
-  --titles-color: #5b176c;
-  --link-color: #b114dd;
-  --link-hover-color: #ed37d5;
+  --purple-1: #390C3E;
+  --purple-2: #5A235C;
+  --purple-3: #7B3A7B;
+  --purple-4: #9C5199;
+  --purple-5: #BD67B7;
+  --purple-6: #DE7ED6;
+  --purple-pink: #FF95F4;
 
-  --purple-1: #390c3e;
-  --purple-2: #6d2e5e;
-  --purple-3: #c847aa;
+  --pink-1: #c847aa;
+  --pink-2: #ed37d5;
+
+  --text-color: rgb(41, 41, 41);
+  --titles-color: var(--purple-2);
+  --link-color: var(--purple-4);
+  --link-hover-color: var(--pink-2);
 }
 
 * {
@@ -49,15 +56,25 @@ h6 {
 }
 
 .navbar {
+  --bs-navbar-color: var(--purple-1);
+  --bs-navbar-disabled-color: var(--purple-2);
+
   --bs-navbar-toggler-padding-y: 1rem;
   --bs-navbar-toggler-padding-x: 1rem;
   --bs-navbar-toggler-font-size: 1.6rem;
   --bs-navbar-toggler-icon-bg: none;
   --bs-navbar-toggler-border-radius: 50%;
   --bs-navbar-toggler-border-color: var(--purple-1);
-
 }
 
-.navbar-toggler:hover {
-  color: var(--purple-1);
+.navbar-toggler {
+  background-color: var(--purple-3);
+}
+
+.navbar-me {
+  padding-left: 2rem;
+}
+
+.navbar-toggler-icon {
+  color: white;
 }
