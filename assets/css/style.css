@@ -2,16 +2,14 @@
 # General
 ----------------------------*/
 :root {
-    --main-color-text: #272829;
-    --main-color-title: #173b6c;
-    --main-color-link: #149ddd;
-    --hover-color-link: #37b3ed;
-    --main-nav-text: #a8a9b4;
-    --main-nav-focus: #6f7180;
+  --text-color: rgb(41, 41, 41);
+  --titles-color: #5b176c;
+  --link-color: #b114dd;
+  --link-hover-color: #ed37d5;
 
-    --main-purple-dark: #390c3e;
-    --back-purple-social: #6d2e5e;
-    --hover-purple-social: #c847aa;
+  --purple-1: #390c3e;
+  --purple-2: #6d2e5e;
+  --purple-3: #c847aa;
 }
 
 * {
@@ -28,16 +26,16 @@ body {
     font-family: "Open Sans", sans-serif;
     font-size: 1.4rem;
     text-align: justify;
-    color: var(--main-color-text);
+    color: var(--text-color);
 }
 
 a {
-  color: var(--main-color-link);
+  color: var(--link-color);
   text-decoration: none;
 }
 
 a:hover {
-  color: var(--hover-color-link);
+  color: var(--link-hover-color);
   text-decoration: none;
 }
 
@@ -56,4 +54,10 @@ h6 {
   --bs-navbar-toggler-font-size: 1.6rem;
   --bs-navbar-toggler-icon-bg: none;
   --bs-navbar-toggler-border-radius: 50%;
+  --bs-navbar-toggler-border-color: var(--purple-1);
+
+}
+
+.navbar-toggler:hover {
+  color: var(--purple-1);
 }
