@@ -90,6 +90,7 @@ ul {
 }
 
 .navbar-toggler,
+.navbar-me,
 footer {
   background-color: var(--purple-3);
 }
@@ -102,6 +103,30 @@ footer {
 footer {
   color: white;
 }
+
+/**/
+.navbar-collapse {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.navbar-collapse.collapsing {
+  height: 100%;
+  transition: height 0s ease;
+}
+
+.navbar-collapse.show {
+  height: 100%;
+  left: 0;
+  transition: left 400ms ease-in-out;
+}
+
+.navbar-toggler.collapsed ~ .navbar-collapse {
+  transition: left 400ms ease-in;
+}
+
+/**/
 
 /* ----------- main ----------- */
 
@@ -233,6 +258,10 @@ footer ul li::before {
 
 /* phones: <576px (xs | col-x) */
 @media only screen and (max-width: 575px) {
+  .navbar-collapse.show,
+  .navbar-collapse.collapsing {
+    width: 85vw;
+  }
   .me {
     min-height: 80vh;
   }
@@ -245,6 +274,10 @@ footer ul li::before {
 
 /* tablets: 576px a 768px (sm | col-sm-x) */
 @media only screen and (min-width: 576px) {
+  .navbar-collapse.show,
+  .navbar-collapse.collapsing  {
+    width: 35vw;
+  }
   .me {
     min-height: 80vh;
   }
@@ -257,10 +290,18 @@ footer ul li::before {
 
 /* small pc: 768px a 992px (md | col-md-x) */
 @media only screen and (min-width: 768px) {
+  .navbar-collapse.show,
+  .navbar-collapse.collapsing  {
+    width: 30vw;
+  }
 }
 
 /* medium pc: 992px a 1200px (lg | col-lg-x) */
 @media only screen and (min-width: 992px) {
+  .navbar-collapse.show,
+  .navbar-collapse.collapsing  {
+    width: 28vw;
+  }
   .footer-me {
     padding: 4vh 0;
   }
@@ -268,8 +309,16 @@ footer ul li::before {
 
 /* large pc: 1200px a 1400 (xl | col-xl-x) */
 @media only screen and (min-width: 1200px) {
+  .navbar-collapse.show,
+  .navbar-collapse.collapsing  {
+    width: 25vw;
+  }
 }
 
 /* large pc: 1400 + (xl | col-xl-x) */
 @media only screen and (min-width: 1400px) {
+  .navbar-collapse.show,
+  .navbar-collapse.collapsing  {
+    width: 22vw;
+  }
 }
