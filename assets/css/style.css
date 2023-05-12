@@ -80,6 +80,12 @@ ul {
   height: auto;
 }
 
+.year {
+  font-size: 1rem;
+  font-weight: bold;
+  color: magenta;
+}
+
 /* ----------- header ----------- */
 
 /* ----------- main ----------- */
