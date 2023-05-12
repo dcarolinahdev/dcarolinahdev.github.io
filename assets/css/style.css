@@ -85,7 +85,6 @@ ul {
   border: 1px solid purple;
 }*/
 
-.hero,
 .about > .row,
 .services,
 .services .card-body {
@@ -114,22 +113,38 @@ ul {
 
 /* hero */
 
-.hero h1,
-.hero h3 {
-  color: white;
-}
-
-.hero .card {
-  border: none;
-}
-
-.card-img-overlay {
+#hero {
   display: flex;
   flex-direction: column;
-  color: white;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+
+  width: 100%;
+  height: 100vh;
+  background: url("../img/desktop.jpg") top center;
+  background-size: cover;
+}
+
+#hero:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+#hero .hero-container {
+  position: relative;
+  z-index: 2;
+  /*min-width: 300px;*/
+}
+
+#hero h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: white;
 }
 
 /* about */
