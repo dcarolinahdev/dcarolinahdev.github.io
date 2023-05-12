@@ -147,6 +147,11 @@ ul {
   color: white;
 }
 
+#hero h3 {
+  font-weight: 700;
+  color: white;
+}
+
 /* about */
 
 .about ul li::before {
