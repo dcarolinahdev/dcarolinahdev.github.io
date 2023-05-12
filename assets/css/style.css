@@ -152,6 +152,16 @@ ul {
   color: white;
 }
 
+#hero h3::before {
+  content : "";
+  position: absolute;
+  left    : 0;
+  bottom  : 0;
+  height  : 1px;
+  width: 3ch;
+  border-bottom: 2px solid var(--purple-pink);
+}
+
 /* about */
 
 .about ul li::before {
