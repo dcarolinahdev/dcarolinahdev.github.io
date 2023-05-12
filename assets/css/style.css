@@ -90,8 +90,7 @@ ul {
 }
 
 .navbar-toggler,
-.navbar-me,
-footer {
+.navbar-me {
   background-color: var(--purple-3);
 }
 
@@ -99,8 +98,7 @@ footer {
   padding-left: 2rem;
 }
 
-.navbar-toggler-icon,
-footer {
+.navbar-toggler-icon {
   color: white;
 }
 
@@ -229,6 +227,11 @@ footer {
 }
 
 /* ----------- footer ----------- */
+
+footer {
+  background-color: var(--purple-3);
+  color: white;
+}
 
 .footer-me {
   display: flex;
