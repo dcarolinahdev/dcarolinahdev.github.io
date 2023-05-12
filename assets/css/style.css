@@ -75,9 +75,21 @@ ul {
   padding-left: 0;
 }
 
-/* ----------- navbar ----------- */
+.img-responsive {
+  width: 100%;
+  height: auto;
+}
+
+/* ----------- header ----------- */
 
 /* ----------- main ----------- */
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
 
 /* hero */
 
@@ -106,7 +118,6 @@ ul {
 #hero .hero-container {
   position: relative;
   z-index: 2;
-  /*min-width: 300px;*/
 }
 
 #hero h1 {
@@ -136,11 +147,8 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
-}
-
-.about {
   width: 80%;
+  padding: 2rem;
 }
 
 .about > .row {
@@ -151,7 +159,6 @@ ul {
 }
 
 .about-text {
-  width: 80%;
   padding: 5rem 0 3rem 0;
 }
 
@@ -173,6 +180,7 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 80%;
   padding: 2rem;
 }
 
@@ -180,8 +188,8 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  width: 80%;
+  /*align-items: center;*/
+  width: 100%;
   gap: 2rem;
 }
 
@@ -193,7 +201,7 @@ ul {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  width: 80%;
+  width: 100%;
   gap: 2rem;
 }
 
@@ -219,6 +227,7 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 80%;
   padding: 2rem;
 }
 
@@ -227,7 +236,7 @@ ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 80%;
+  width: 100%;
   gap: 2rem;
 }
 
@@ -239,7 +248,7 @@ ul {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  width: 80%;
+  width: 100%;
   gap: 2rem;
 }
 
