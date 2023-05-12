@@ -79,13 +79,6 @@ ul {
 
 /* ----------- main ----------- */
 
-/*#portfolio,
-#about,
-#services {
-  border: 1px solid purple;
-}*/
-
-.about > .row,
 .services,
 .services .card-body {
   display: flex;
@@ -94,7 +87,6 @@ ul {
   align-items: center;
 }
 
-#about,
 #portfolio,
 #services {
   display: flex;
@@ -103,8 +95,6 @@ ul {
   padding: 2rem;
 }
 
-.about,
-.about-text,
 .portfolio,
 .services,
 .services-text {
@@ -164,20 +154,39 @@ ul {
 
 /* about */
 
-.about ul li::before {
-  font-family:'Bootstrap-icons';
-  content: '\F633   ';
-  color: var(--purple-3);
-  font-size: 2rem;
+#about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.about {
+  width: 80%;
+}
+
+.about > .row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .about-text {
+  width: 80%;
   padding: 5rem 0 3rem 0;
 }
 
 .two-column {
   display: flex;
   justify-content: space-between;
+}
+
+.about ul li::before {
+  font-family:'Bootstrap-icons';
+  content: '\F633   ';
+  color: var(--purple-3);
+  font-size: 2rem;
 }
 
 /* portfolio */
