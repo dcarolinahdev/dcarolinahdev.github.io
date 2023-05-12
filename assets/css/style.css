@@ -151,14 +151,24 @@ main {
   padding: 2rem;
 }
 
-.about > .row {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.about-title {
+  position: relative;
+  margin-bottom: 1.5rem;
 }
 
-.about-text {
+.about-title::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height  : 1px;
+  width: 3ch;
+  border-bottom: 2px solid magenta;
+}
+
+.container-jobs {
+  display: flex;
+  flex-direction: column;
   padding: 5rem 0 3rem 0;
 }
 
