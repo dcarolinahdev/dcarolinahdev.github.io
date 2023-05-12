@@ -269,6 +269,18 @@ main {
 
 .services-title {
   align-self: flex-start;
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.services-title::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height  : 1px;
+  width: 3ch;
+  border-bottom: 2px solid magenta;
 }
 
 .services-cards {
