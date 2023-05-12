@@ -87,7 +87,6 @@ ul {
   align-items: center;
 }
 
-#portfolio,
 #services {
   display: flex;
   justify-content: center;
@@ -95,7 +94,6 @@ ul {
   padding: 2rem;
 }
 
-.portfolio,
 .services,
 .services-text {
   width: 80%;
@@ -190,6 +188,17 @@ ul {
 }
 
 /* portfolio */
+
+#portfolio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.portfolio {
+  width: 80%;
+}
 
 /* services */
 
