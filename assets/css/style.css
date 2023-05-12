@@ -77,42 +77,15 @@ ul {
 
 /* ----------- navbar ----------- */
 
-.navbar {
-  --bs-navbar-color: var(--purple-1);
-  --bs-navbar-disabled-color: var(--purple-2);
-
-  --bs-navbar-toggler-padding-y: 1rem;
-  --bs-navbar-toggler-padding-x: 1rem;
-  --bs-navbar-toggler-font-size: 1.6rem;
-  --bs-navbar-toggler-icon-bg: none;
-  --bs-navbar-toggler-border-radius: 50%;
-  --bs-navbar-toggler-border-color: var(--purple-1);
-}
-
-.navbar-toggler,
-footer {
-  background-color: var(--purple-3);
-}
-
-.navbar-me {
-  padding-left: 2rem;
-}
-
-.navbar-toggler-icon,
-footer {
-  color: white;
-}
-
 /* ----------- main ----------- */
 
 /*#portfolio,
-#contact,
 #about,
 #services {
   border: 1px solid purple;
 }*/
 
-.me,
+.hero,
 .about > .row,
 .services,
 .services .card-body {
@@ -124,8 +97,7 @@ footer {
 
 #about,
 #portfolio,
-#services,
-#contact {
+#services {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -136,19 +108,18 @@ footer {
 .about-text,
 .portfolio,
 .services,
-.services-text,
-.contact {
+.services-text {
   width: 80%;
 }
 
-/* me */
+/* hero */
 
-.me h1,
-.me h3 {
+.hero h1,
+.hero h3 {
   color: white;
 }
 
-.me .card {
+.hero .card {
   border: none;
 }
 
@@ -156,10 +127,8 @@ footer {
   display: flex;
   flex-direction: column;
   color: white;
-  justify-content: center; /*v*/
-  align-items: center; /*v*/
-  /*margin: 0.5rem;
-  padding: 5%;*/
+  justify-content: center;
+  align-items: center;
   gap: 1rem;
 }
 
@@ -209,9 +178,12 @@ footer {
   box-shadow: 0 0 3rem 0.5rem var(--purple-2);
 }
 
-/* contact */
-
 /* ----------- footer ----------- */
+
+footer {
+  background-color: var(--purple-3);
+  color: white;
+}
 
 .footer-me {
   display: flex;
@@ -233,9 +205,6 @@ footer ul li::before {
 
 /* phones: <576px (xs | col-x) */
 @media only screen and (max-width: 575px) {
-  .me {
-    min-height: 80vh;
-  }
   .footer-me {
     padding: 3.5vh 0;
     min-height: 20vh;
@@ -245,9 +214,6 @@ footer ul li::before {
 
 /* tablets: 576px a 768px (sm | col-sm-x) */
 @media only screen and (min-width: 576px) {
-  .me {
-    min-height: 80vh;
-  }
   .footer-me {
     padding: 3.5vh 0;
     min-height: 20vh;
