@@ -77,54 +77,6 @@ ul {
 
 /* ----------- navbar ----------- */
 
-.navbar {
-  --bs-navbar-color: var(--purple-1);
-  --bs-navbar-disabled-color: var(--purple-2);
-
-  --bs-navbar-toggler-padding-y: 1rem;
-  --bs-navbar-toggler-padding-x: 1rem;
-  --bs-navbar-toggler-font-size: 1.6rem;
-  --bs-navbar-toggler-icon-bg: none;
-  --bs-navbar-toggler-border-radius: 50%;
-  --bs-navbar-toggler-border-color: var(--purple-1);
-}
-
-.navbar-toggler,
-.navbar-me {
-  background-color: var(--purple-3);
-}
-
-.navbar-me {
-  padding-left: 2rem;
-}
-
-.navbar-toggler-icon {
-  color: white;
-}
-
-/* for show from left side */
-/*
-.navbar-collapse {
-  position: fixed;
-  top: 0;
-  left: 0;
-}
-
-.navbar-collapse.collapsing {
-  height: 100%;
-  transition: height 0s ease;
-}
-
-.navbar-collapse.show {
-  height: 100%;
-  left: 0;
-  transition: left 400ms ease-in-out;
-}
-
-.navbar-toggler.collapsed ~ .navbar-collapse {
-  transition: left 400ms ease-in;
-} */
-
 /* ----------- main ----------- */
 
 /*#portfolio,
@@ -253,10 +205,6 @@ footer ul li::before {
 
 /* phones: <576px (xs | col-x) */
 @media only screen and (max-width: 575px) {
-  /*.navbar-collapse.show,
-  .navbar-collapse.collapsing {
-    width: 85vw;
-  }*/
   .footer-me {
     padding: 3.5vh 0;
     min-height: 20vh;
