@@ -224,6 +224,13 @@ main {
   font-style: italic;
 }
 
+.portfolio-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
 .portfolio-cards .sublist {
   display: flex;
   justify-content: space-between;
