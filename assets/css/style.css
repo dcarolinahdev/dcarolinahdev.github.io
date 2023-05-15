@@ -99,6 +99,30 @@ main {
 
 /* hero */
 
+.hero img {
+  width: 100vw;
+  height: 100vh;
+}
+
+.hero h1,
+.hero .job {
+  color: white;
+}
+
+.hero h3 {
+  color: magenta;
+}
+
+.card-img-overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  --bs-card-img-overlay-padding: 0% 5% 0% 5%;
+}
+
 /* about */
 
 #about {
