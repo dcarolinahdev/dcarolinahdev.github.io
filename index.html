@@ -19,161 +19,198 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <!-- navbar -->
+    <div class="global d-flex">
+        <!-- header -->
+        <header id="collapseHeader" class="collapse">
+            <div class="container-header">
+                <div class="profile">
+                    <img src="./assets/img/me.jpg" alt="Profile image" class="img-responsive rounded-circle">
+                    <h1>Diana Carolina Hernandez</h1>
+                    <div class="social-links">
+                        <a href="https://github.com/dcarolinahdev"><i class="bi bi-github"></i></a>
+                        <a href="https://www.linkedin.com/in/dcarolinahdev"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
 
-    <!-- main -->
-    <main>
-        <div id="hero">
-            <div class="hero-container" data-aos="fade-in">
-                <h1>Diana Carolina Hernandez</h1>
-                <h3><span class="typed"></span></h3>
-                <div id="cadenasJob">
-                    <h3>I'm <i class="typed job">Backend Developer</i></h3>
-                    <h3>I'm <i class="typed job">Fullstack Developer</i></h3>
-                    <h3>I'm <i class="typed job">Web Developer</i></h3>
+                <nav id="navbar" class="nav-menu navbar">
+                    <ul>
+                        <li><a href="#hero" class="nav-link scrollto active">
+                            <i class="bi bi-house-fill"></i> <span>Home</span></a></li>
+                        <li><a href="#about" class="nav-link scrollto">
+                            <i class="bi bi-person-circle"></i> <span>About</span></a></li>
+                        <li><a href="#portfolio" class="nav-link scrollto">
+                            <i class="bi bi-grid-1x2-fill"></i> <span>Portfolio</span></a></li>
+                        <li><a href="#services" class="nav-link scrollto">
+                            <i class="bi bi-server"></i> <span>Services</span></a></li>
+                        <li><a href="#skills" class="nav-link scrollto">
+                            <i class="bi bi-bookmark-check-fill"></i><span>Skills</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- main -->
+        <div class="main">
+            <div id="hero">
+                <div class="card hero">
+                    <img src="./assets/img/desktop.jpg" class="card-img" alt="Desktop">
+                    <div class="card-img-overlay">
+                        <h1>Diana Carolina Hernandez</h1>
+                        <h3><span class="typed"></span></h3>
+                        <div id="cadenasJob">
+                            <h3>I'm <i class="typed job">Backend Developer</i></h3>
+                            <h3>I'm <i class="typed job">Fullstack Developer</i></h3>
+                            <h3>I'm <i class="typed job">Web Developer</i></h3>
+                        </div>
+                    </div>
+                    <button
+                        class="btn btn-me" type="button" data-bs-toggle="collapse" aria-expanded="false"
+                        data-bs-target="#collapseHeader" aria-controls="collapseHeader">
+                        <i class="bi bi-laptop-fill"></i>
+                    </button>
                 </div>
             </div>
-        </div>
 
-        <div id="about">
-            <div class="about">
-                <div class="about-title">
-                    <h2>About</h2>
-                </div>
+            <div id="about">
+                <div class="about">
+                    <div class="about-title">
+                        <h2>About</h2>
+                    </div>
 
-                <div class="about-text">
-                    <p>¡Hi! I'm <strong>Diana Carolina Hernandez</strong>, a passionate software <strong>engineer</strong> with 3 years of
-                        industry experience. I'm passionate about creating technological solutions that improve the lives of people and businesses.</p>
-                    <p>My experience includes working with programming languages like Python and Ruby,
-                        as well as using technologies such as Django, Rails, Docker, Git, and
-                        relational databases. I take pride in working closely with my clients to
-                        understand their needs and create customized solutions that enable them to
-                        achieve their goals.</p>
-                    <p>On this website, you'll find my skills and some of my projects (You can view all of them in my github site). If you're interested in working with me or have any
-                        questions, please don't hesitate to contact me. Thank you for visiting my site!!.</p>
-                </div>
+                    <div class="about-text">
+                        <p>¡Hi! I'm <strong>Diana Carolina Hernandez</strong>, a passionate software <strong>engineer</strong> with 3 years of
+                            industry experience. I'm passionate about creating technological solutions that improve the lives of people and businesses.</p>
+                        <p>My experience includes working with programming languages like Python and Ruby,
+                            as well as using technologies such as Django, Rails, Docker, Git, and
+                            relational databases. I take pride in working closely with my clients to
+                            understand their needs and create customized solutions that enable them to
+                            achieve their goals.</p>
+                        <p>On this website, you'll find my skills and some of my projects (You can view all of them in my github site). If you're interested in working with me or have any
+                            questions, please don't hesitate to contact me. Thank you for visiting my site!!.</p>
+                    </div>
 
-                <div class="jobs">
-                    <img src="assets/img/desktop.jpg" class="img-responsive" alt="Developer desktop">
-                    <div class="container-jobs">
-                        <div>
-                            <h3>Backend Developer.</h3>
-                            <p>
-                                As Backend Developer I know Python, Ruby and currently studyng Nodejs.
-                            </p>
-                        </div>
-                        <div>
-                            <h3>Fullstack Developer.</h3>
-                            <p>
-                                As Fullstack Developer I know Django-Postgresql and currently studyng MERN (Mongo-Express-React-Nodejs).
-                            </p>
-                        </div>
-                        <div>
-                            <h3>Web Developer.</h3>
-                            <p>
-                                As Web Developer I know HTML-5, CSS, Javascript, Bootstrap and currently studyng Tailwind CSS.
-                            </p>
+                    <div class="jobs">
+                        <img src="assets/img/desktop.jpg" class="img-responsive" alt="Developer desktop">
+                        <div class="container-jobs">
+                            <div>
+                                <h3>Backend Developer.</h3>
+                                <p>
+                                    As Backend Developer I know Python, Ruby and currently studyng Nodejs.
+                                </p>
+                            </div>
+                            <div>
+                                <h3>Fullstack Developer.</h3>
+                                <p>
+                                    As Fullstack Developer I know Django-Postgresql and currently studyng MERN (Mongo-Express-React-Nodejs).
+                                </p>
+                            </div>
+                            <div>
+                                <h3>Web Developer.</h3>
+                                <p>
+                                    As Web Developer I know HTML-5, CSS, Javascript, Bootstrap and currently studyng Tailwind CSS.
+                                </p>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="two-column">
-                    <div>
-                        <ul>
-                            <li><strong>Website:</strong> <span>dcarolinahdev.github.io</span></li>
-                            <li><strong>City:</strong> <span>Cali, Colombia</span></li>
-                        </ul>
-                    </div>
-                    <div>
-                        <ul>
-                            <li><strong>Degree:</strong> <span>College | University</span></li>
-                        </ul>
+                    <div class="two-column">
+                        <div>
+                            <ul>
+                                <li><strong>Website:</strong> <span>dcarolinahdev.github.io</span></li>
+                                <li><strong>City:</strong> <span>Cali, Colombia</span></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul>
+                                <li><strong>Degree:</strong> <span>College | University</span></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div id="portfolio">
-            <div class="portfolio">
-                <div class="portfolio-title">
-                    <h2>Portfolio</h2>
-                </div>
-                <div class="portfolio-cards">
-                    <section>
-                        <h3>HTML projects</h3>
-                        <div class="sublist">
-                            <div class="card">
-                                <img src="./assets/img/portfolio/git-platzi.png" class="card-img-top" alt="git-platzi">
-                                <div class="card-body">
-                                    <a href="https://dcarolinahdev.github.io/platzi_git_github/" target="_blank">Course git | Platzi</a>
-                                    <div class="year">2022</div>
+            <div id="portfolio">
+                <div class="portfolio">
+                    <div class="portfolio-title">
+                        <h2>Portfolio</h2>
+                    </div>
+                    <div class="portfolio-cards">
+                        <section>
+                            <h3>HTML projects</h3>
+                            <div class="sublist">
+                                <div class="card">
+                                    <img src="./assets/img/portfolio/git-platzi.png" class="card-img-top" alt="git-platzi">
+                                    <div class="card-body">
+                                        <a href="https://dcarolinahdev.github.io/platzi_git_github/" target="_blank">Course git | Platzi</a>
+                                        <div class="year">2022</div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="./assets/img/portfolio/travel-site.png" class="card-img-top" alt="travel-site">
+                                    <div class="card-body">
+                                        <a href="https://dcarolinahdev.github.io/web_latam_travel" target="_blank">Page for Travel Site</a>
+                                        <div class="year">2023</div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="card">
-                                <img src="./assets/img/portfolio/travel-site.png" class="card-img-top" alt="travel-site">
-                                <div class="card-body">
-                                    <a href="https://dcarolinahdev.github.io/web_latam_travel" target="_blank">Page for Travel Site</a>
-                                    <div class="year">2023</div>
+                        </section>
+                        <section>
+                            <h3>Teamwork</h3>
+                            <div class="sublist">
+                                <div class="card">
+                                    <img src="./assets/img/portfolio/petshop.png" class="card-img-top" alt="pet-shop">
+                                    <div class="card-body">
+                                        <a href="https://harold12a.github.io/challenge-js/" target="_blank">Petshop</a>
+                                        <div class="year">2023</div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </section>
-                    <section>
-                        <h3>Teamwork</h3>
-                        <div class="sublist">
-                            <div class="card">
-                                <img src="./assets/img/portfolio/petshop.png" class="card-img-top" alt="pet-shop">
-                                <div class="card-body">
-                                    <a href="https://harold12a.github.io/challenge-js/" target="_blank">Petshop</a>
-                                    <div class="year">2023</div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
+                        </section>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div id="services">
-            <div class="services">
-                <div class="services-title">
-                    <h2>Services</h2>
-                </div>
-                <div class="services-cards">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="card-title">
-                                <i class="bi bi-circle-fill"></i>
-                            </div>
-                            <div class="card-text">
-                                <strong>Full time:</strong> <span>Available</span>
+            <div id="services">
+                <div class="services">
+                    <div class="services-title">
+                        <h2>Services</h2>
+                    </div>
+                    <div class="services-cards">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="card-title">
+                                    <i class="bi bi-circle-fill"></i>
+                                </div>
+                                <div class="card-text">
+                                    <strong>Full time:</strong> <span>Available</span>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="card-title">
-                                <i class="bi bi-circle-half"></i>
-                            </div>
-                            <div class="card-text">
-                                <strong>Mid time:</strong> <span>Available</span>
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="card-title">
+                                    <i class="bi bi-circle-half"></i>
+                                </div>
+                                <div class="card-text">
+                                    <strong>Mid time:</strong> <span>Available</span>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="card-title">
-                                <i class="bi bi-boxes"></i>
-                            </div>
-                            <div class="card-text">
-                                <strong>Freelance:</strong> <span>Available</span>
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="card-title">
+                                    <i class="bi bi-boxes"></i>
+                                </div>
+                                <div class="card-text">
+                                    <strong>Freelance:</strong> <span>Available</span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </main>
+    </div>
 
     <!-- footer -->
     <footer class="">
