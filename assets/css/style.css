@@ -147,6 +147,19 @@ header {
   gap: 1rem;
 }
 
+.btn-me {
+  background-color: var(--purple-3);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 1rem 1.45rem;
+  font-size: 1.6rem;
+
+  position: absolute;
+  top: 1%;
+  right: 1%;
+}
+
 /* ----------- main ----------- */
 
 .main {
