@@ -263,7 +263,6 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /*align-items: center;*/
   width: 100%;
   gap: 2rem;
 }
@@ -298,26 +297,47 @@ header {
 
 .portfolio-cards .sublist {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
   width: 100%;
-  gap: 2rem;
 }
 
 .portfolio-cards .card {
-  width: 30vw;
-  min-height: 25vh;
-
-  -webkit-box-shadow: 0 0 3rem 0.5rem var(--purple-2);
-  -moz-box-shadow: 0 0 3rem 0.5rem var(--purple-2);
-  box-shadow: 0 0 3rem 0.5rem var(--purple-2);
+  position: relative;
+  -webkit-box-shadow: 0 0 2rem 0.5rem var(--purple-2);
+  -moz-box-shadow: 0 0 2rem 0.5rem var(--purple-2);
+  box-shadow: 0 0 2rem 0.5rem var(--purple-2);
+  align-items: center;
 }
 
 .portfolio .card-body {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--purple-1);
+  border-radius: 0.5rem;
+  width: 60%;
+  height: 50%;
+}
+
+.card-img-top {
+  opacity: 0.3;
+}
+
+.portfolio .card-img-top:hover + .card-body,
+.portfolio .card-body:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.portfolio .card-body a:hover {
+  color: var(--purple-pink);
 }
 
 /* services */
@@ -413,6 +433,14 @@ footer ul li::before {
 
 /* phones: <576px (xs | col-x) */
 @media only screen and (max-width: 575px) {
+  .portfolio .sublist {
+    row-gap: 2.5rem;
+  }
+
+  .portfolio .card {
+    width: 80%;
+  }
+  
   .footer-me {
     padding: 3.5vh 0;
     min-height: 20vh;
@@ -422,6 +450,14 @@ footer ul li::before {
 
 /* tablets: 576px a 768px (sm | col-sm-x) */
 @media only screen and (min-width: 576px) {
+  .portfolio .sublist {
+    row-gap: 2.5rem;
+  }
+
+  .portfolio .card {
+    width: 80%;
+  }
+
   .footer-me {
     padding: 3.5vh 0;
     min-height: 20vh;
@@ -431,10 +467,25 @@ footer ul li::before {
 
 /* small pc: 768px a 992px (md | col-md-x) */
 @media only screen and (min-width: 768px) {
+  .portfolio-cards .sublist {
+    flex-direction: row;
+  }
+
+  .portfolio .sublist {
+    row-gap: 3rem;
+  }
+
+  .portfolio .card {
+    width: 47.5%;
+  }
 }
 
 /* medium pc: 992px a 1200px (lg | col-lg-x) */
 @media only screen and (min-width: 992px) {
+  .portfolio .sublist {
+    row-gap: 3.5rem;
+  }
+
   .footer-me {
     padding: 4vh 0;
   }
