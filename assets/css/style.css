@@ -13,6 +13,9 @@
   --pink-1: #c847aa;
   --pink-2: #ed37d5;
 
+  --green-dark: #1C5B15;
+  --green-med: #35741B;
+
   --text-color: rgb(41, 41, 41);
   --titles-color: var(--purple-2);
   --link-color: var(--purple-4);
@@ -177,8 +180,11 @@ header {
 
 /* hero */
 
-.hero {
+#hero {
   width: 100%;
+}
+
+.hero {
   height: 100vh;
 }
 
@@ -187,13 +193,18 @@ header {
   object-fit: cover;
 }
 
-.hero h1,
-.hero .job {
+.hero h1 {
   color: white;
+  font-size: 3.6rem;
 }
 
 .hero h3 {
-  color: magenta;
+  color: var(--green-dark);
+  font-size: 2.5rem;
+}
+
+.hero .job {
+  color: var(--green-med);
 }
 
 .card-img-overlay {
