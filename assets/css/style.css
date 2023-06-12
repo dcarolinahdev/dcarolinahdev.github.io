@@ -20,7 +20,7 @@
   --text-color: rgb(41, 41, 41);
   --titles-color: var(--purple-2);
   --link-color: var(--purple-4);
-  --link-hover-color: var(--pink-2);
+  --link-hover-color: white;
   --line: 4ch;
 }
 
@@ -97,9 +97,20 @@ ul {
 /* ----------- header ----------- */
 
 header {
+  display: flex;
+  justify-content: center;
   background-color: var(--purple-3);
-  min-width: 30vw;
-  min-height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+}
+
+header > div {
+  width: 80%;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .container-header {
@@ -129,7 +140,7 @@ header {
 }
 
 .social-links {
-  margin-top: 1.5rem;
+  margin: 1rem;
   display: flex;
   gap: 0.5rem;
 }
@@ -139,6 +150,10 @@ header {
   padding: 0.75rem 1.15rem;
   border-radius: 50%;
   font-size: 1.6rem;
+}
+
+.social-links a:hover {
+  background-color: var(--purple-pink);
 }
 
 .navbar {
@@ -213,6 +228,7 @@ header {
 }
 
 .card-img-overlay {
+  width: 70%;
   display: flex;
   flex-direction: column;
   justify-content: center;
