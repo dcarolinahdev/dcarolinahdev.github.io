@@ -237,9 +237,10 @@ header {
   padding: 5rem 0 3rem 0;
 }
 
-.two-column {
+.about ul {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .about ul li::before {
