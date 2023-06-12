@@ -69,7 +69,7 @@ h4 {
 }
 
 strong {
-  color: var(--purple-2);
+  color:forestgreen;
 }
 
 ul {
@@ -242,10 +242,40 @@ header {
   border-bottom: 2px solid magenta;
 }
 
+.about-me {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.about-me .presentation,
+.about-me .skills {
+  width: 90%;
+}
+
+.about-me .skills figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-me .skills img {
+  width: 50%;
+  height: auto;
+}
+
+.jobs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
 .container-jobs {
   display: flex;
   flex-direction: column;
-  padding: 5rem 0 3rem 0;
+  padding: 3rem 0 3rem 0;
 }
 
 .about ul {
