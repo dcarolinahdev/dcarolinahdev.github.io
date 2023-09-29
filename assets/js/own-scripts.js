@@ -12,3 +12,27 @@ let typed = new Typed('.typed', {
     cursorChar: '|',
     contentType: 'html',
 });
+
+function home() {
+    let divs_section = document.getElementsByClassName("div-section");
+    for (let i=0; i < divs_section.length; i++){
+        divs_section[i].style.display = "none";
+    }
+
+    let div_home = document.getElementById("home");
+    div_home.style.display = "block";
+}
+
+function about() {
+    let divs_section = document.getElementsByClassName("div-section");
+    for (let i=0; i < divs_section.length; i++){
+        divs_section[i].style.display = "none";
+    }
+
+    let div_about = document.getElementById("about");
+    div_about.style.display = "flex";
+    div_about.classList.add("flex-column");
+    div_about.classList.add("justify-content-center");
+    div_about.classList.add("align-items-center");
+}
+

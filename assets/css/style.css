@@ -4,6 +4,7 @@
 :root {
   --highlight-text: #390C3E;
   --med-line: magenta;
+  --background-section: #D1FF83;
   --link-hover-color: white;
   --text-color: rgb(41, 41, 41);
 }
@@ -27,16 +28,6 @@ body {
   font-size: 1.4rem;
   text-align: justify;
 }
-
-/*a {
-  color: var(--link-color);
-  text-decoration: none;
-}
-
-a:hover {
-  color: var(--link-hover-color);
-  text-decoration: none;
-}*/
 
 .img-responsive {
   width: 100%;
@@ -135,16 +126,71 @@ div.pres img.me {
   border-radius: 50%;
 }
 
+.div-section {
+  height: 100vh;
+}
+
+.div-section h1 {
+  color: var(--highlight-text);
+  font-weight: bold;
+  font-size: 3.2rem;
+}
+
+.div-section > div {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 2rem;
+
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+
+  box-shadow: 2px 2px 34px 0px rgba(0,0,0,0.8);
+  -webkit-box-shadow: 2px 2px 34px 0px rgba(0,0,0,0.8);
+  -moz-box-shadow: 2px 2px 34px 0px rgba(0,0,0,0.8);
+}
+
 #about {
+  min-width: 94vw;
+  /*height: 60vh;
   display: none;
+
+  color: black;*/
+  background-color: var(--background-section);
+}
+
+.about-p {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 0rem;
+}
+
+.about-p img {
+  height: 100px;
+  min-width: 100px;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 #skills {
+  min-width: 94vw;
+  height: 100vh;
   display: none;
+
+  color: black;
+  background-color: var(--background-section);
 }
 
 #portfolio {
+  min-width: 94vw;
+  height: 100vh;
   display: none;
+
+  color: black;
+  background-color: var(--background-section);
 }
 
 /* ##################### */

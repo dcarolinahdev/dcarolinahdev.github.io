@@ -22,23 +22,23 @@
     <div class="navbar fixed-top">
         <ul class="nav">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#home">Home</a>
+              <a class="nav-link" id="tab-home" aria-current="page" href="#home" onclick="home();">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about">About me</a>
+              <a class="nav-link" id="tab-about" href="#about" onclick="about();">About me</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#skills">Skills</a>
+              <a class="nav-link" id="tab-skills" href="#skills">Skills</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#portfolio">Portfolio</a>
+              <a class="nav-link" id="tab-portfolio" href="#portfolio">Portfolio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" aria-disabled="true">Blog</a>
+              <a class="nav-link disabled" id="" aria-disabled="true">Blog</a>
             </li>
           </ul>
     </div>
-    <div id="home">
+    <div class="div-section" id="home">
         <img src="./assets/img/home.jpg" alt="Background">
         <div class="pres">
             <div class="d-flex justify-content-center align-items-center">
@@ -53,14 +53,30 @@
             </div>
         </div>
     </div>
-    <div id="about">
-        <span>About me</span>
+    <div class="div-section" id="about">
+        <div>
+            <h1>About me</h1>
+            <div class="about-p">
+                <img class="" src="./assets/img/profile_photo.jpeg" alt="me">
+                <div class="presentation">
+                    <p>¡Hi! I'm <strong>Diana Carolina Hernandez</strong>, a passionate software <strong>engineer</strong> with 3 years of
+                        industry experience. I'm passionate about creating technological solutions that improve the lives of people and businesses.</p>
+                    <!--<p>My experience includes working with programming languages like Python and Ruby,
+                        as well as using technologies such as Django, Rails, Docker, Git, and
+                        relational databases. I take pride in working closely with my clients to
+                        understand their needs and create customized solutions that enable them to
+                        achieve their goals.</p>
+                    <p>On this website, you'll find my skills and some of my projects (You can view all of them in my github site). If you're interested in working with me or have any
+                        questions, please don't hesitate to contact me. Thank you for visiting my site!!.</p>-->
+                </div>
+            </div>
+        </div>
     </div>
-    <div id="skills">
-        <span>Skills</span>
+    <div class="div-section" id="skills">
+        <h1>Skills</h1>
     </div>
-    <div id="portfolio">
-        <span>Portfolio</span>
+    <div class="div-section" id="portfolio">
+        <h1>Portfolio</h1>
     </div>
     <div class="footer fixed-bottom d-flex justify-content-center align-items-center">
         <div>
