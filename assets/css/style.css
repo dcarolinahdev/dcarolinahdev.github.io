@@ -2,13 +2,9 @@
 # General
 ----------------------------*/
 :root {
-  --purple-1: #390C3E;
-
-  --text-color: rgb(41, 41, 41);
-  /*--titles-color: var(--purple-2);
-  --link-color: var(--purple-4);
+  --highlight-text: #390C3E;
   --link-hover-color: white;
-  --line: 4ch;*/
+  --text-color: rgb(41, 41, 41);
 }
 
 * {
@@ -53,8 +49,39 @@ div.navbar {
   justify-content: center;
 }
 
+.nav-link {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--highlight-text);
+}
+
+.nav-link:hover {
+  color: var(--link-hover-color);
+}
+
+div.footer {
+  height: 8vh;
+  display: flex;
+  gap: 4px;
+}
+
+.footer-link {
+  background-color: var(--highlight-text);
+  text-decoration: none;
+  color: var(--link-hover-color);
+  border-radius: 50%;
+  padding: 1.1rem 1rem;
+}
+
+.footer-link:hover {
+  color: var(--highlight-text);
+  background-color: var(--link-hover-color);
+}
+
+/* ##################### */
+
 div.main {
-  width: 100vw;
+  min-width: 94vw;
 }
 
 div.main img{
