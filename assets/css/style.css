@@ -24,7 +24,6 @@ html {
 body {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   min-height: 100vh;
 
   font-family: "Open Sans", sans-serif;
@@ -46,6 +45,26 @@ a:hover {
   width: 100%;
   height: auto;
 }
+
+/* ##################### */
+div.navbar {
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+}
+
+div.main {
+  width: 100vw;
+}
+
+div.main img{
+  width: 100%;
+  min-height: 100vh;
+  object-fit: cover;
+  filter: blur(4px);
+}
+
+/* ##################### */
 
 /* small pc: 768px a 992px (md | col-md-x) */
 @media only screen and (min-width: 768px) {
