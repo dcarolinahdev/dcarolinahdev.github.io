@@ -3,6 +3,7 @@
 ----------------------------*/
 :root {
   --highlight-text: #390C3E;
+  --med-line: magenta;
   --link-hover-color: white;
   --text-color: rgb(41, 41, 41);
 }
@@ -78,6 +79,10 @@ div.footer {
   background-color: var(--link-hover-color);
 }
 
+.typed-cursor {
+  color: var(--med-line);
+}
+
 /* ##################### */
 
 #home {
@@ -87,7 +92,7 @@ div.footer {
 
 #home > img{
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   object-fit: cover;
   filter: blur(4px);
 }
@@ -113,6 +118,10 @@ div.pres {
   box-shadow: 2px 2px 34px 0px rgba(0,0,0,0.8);
   -webkit-box-shadow: 2px 2px 34px 0px rgba(0,0,0,0.8);
   -moz-box-shadow: 2px 2px 34px 0px rgba(0,0,0,0.8);
+}
+
+div.pres .job {
+  color: black;
 }
 
 div.pres h1 {
