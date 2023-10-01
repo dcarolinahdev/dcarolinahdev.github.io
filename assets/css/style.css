@@ -151,15 +151,8 @@ div.footer {
 
 .about-main {
   width: 90%;
-  min-height: 40vh;
-  /*display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;*/
 
   background: rgba(255, 255, 255, 0.3);
-  color: var(--link-hover-color);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -173,6 +166,24 @@ div.footer {
 
 .about-main h1 {
   text-align: center;
+  padding-bottom: 2vh;
+}
+
+.carousel {
+  position: initial;
+}
+
+.carousel-inner {
+  margin-top: 10px;
+  min-height: 200px;
+  /*min-height: 140px;*/
+  padding: 0rem 9%;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  width: 8%;
+  padding: 0rem;
 }
 
 /* ##################### */
@@ -203,6 +214,9 @@ div.footer {
 @media only screen and (min-width: 768px) {
   .home-main {
     width: 500px;
+  }
+  .carousel-inner {
+    min-height: 140px;
   }
 }
 
