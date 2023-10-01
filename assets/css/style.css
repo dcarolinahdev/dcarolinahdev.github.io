@@ -268,7 +268,9 @@ div.footer {
 
 /* small pc: 768px a 992px (md | col-md-x) */
 @media only screen and (min-width: 768px) {
-  .home-main {
+  .home-main,
+  .about-main,
+  .skills-main {
     width: 500px;
   }
   .flex-about {
@@ -281,6 +283,10 @@ div.footer {
 
 /* medium pc: 992px a 1200px (lg | col-lg-x) */
 @media only screen and (min-width: 992px) {
+  .about-main,
+  .skills-main {
+    width: 600px;
+  }
 }
 
 /* large pc: 1200px a 1400 (xl | col-xl-x) */
