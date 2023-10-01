@@ -257,11 +257,33 @@ div.footer {
 
 #portfolio {
   min-width: 94vw;
-  height: 100vh;
   display: none;
+}
 
-  color: black;
-  background-color: var(--background-section);
+#portfolio > img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.portfolio-main {
+  width: 90%;
+
+  background: rgba(255, 255, 255, 0.3);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 4vh 2vh;
+
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+
+.portfolio-main h1 {
+  text-align: center;
+  padding-bottom: 2vh;
 }
 
 /* ##################### */
