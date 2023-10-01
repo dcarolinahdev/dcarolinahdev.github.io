@@ -169,6 +169,22 @@ div.footer {
   padding-bottom: 2vh;
 }
 
+.about-main img.me {
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.flex-about {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+  width: 80%;
+  margin: 0 auto;
+}
+
 .carousel {
   position: initial;
 }
@@ -177,6 +193,9 @@ div.footer {
   margin-top: 10px;
   min-height: 200px;
   padding: 0rem 9%;
+
+  display: flex;
+  align-items: center;
 }
 
 .carousel-control-next,
@@ -251,6 +270,9 @@ div.footer {
 @media only screen and (min-width: 768px) {
   .home-main {
     width: 500px;
+  }
+  .flex-about {
+    flex-direction: row;
   }
   .carousel-inner {
     min-height: 140px;
