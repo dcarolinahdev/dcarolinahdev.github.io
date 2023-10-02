@@ -301,6 +301,11 @@ div.footer {
   margin: 0 auto;
 }
 
+.project,
+.card-img-overlay {
+  width: 300px;
+}
+
 .card-img-overlay {
   display: flex;
   justify-content: center;
@@ -358,6 +363,10 @@ div.footer {
   .frame-skills {
     width: 85%;
   }
+  .project,
+  .card-img-overlay {
+    width: 350px;
+  }
 }
 
 /* medium pc: 992px a 1200px (lg | col-lg-x) */
@@ -369,6 +378,10 @@ div.footer {
   .frame-skills {
     width: 75%;
   }
+  .project,
+  .card-img-overlay {
+    width: 370px;
+  }
 }
 
 /* large pc: 1200px a 1400 (xl | col-xl-x) */
@@ -376,8 +389,16 @@ div.footer {
   .home-main {
     width: 600px;
   }
+  .project,
+  .card-img-overlay {
+    width: 400px;
+  }
 }
 
 /* xlarge pc: 1400 + (xl | col-xl-x) */
 @media only screen and (min-width: 1400px) {
+  .project,
+  .card-img-overlay {
+    width: 500px;
+  }
 }
