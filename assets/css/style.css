@@ -4,9 +4,12 @@
 :root {
   --highlight-text: #390C3E;
   --med-line: magenta;
-  --background-section: #D1FF83;
+
   --link-hover-color: white;
   --text-color: rgb(41, 41, 41);
+
+  --proj-dark: rgba(105, 105, 105, 0.95);
+  --proj-light: rgba(105, 105, 105, 0.4);
 }
 
 * {
@@ -298,13 +301,43 @@ div.footer {
   margin: 0 auto;
 }
 
-.project {
-  width: 100%;
-  object-fit: cover;
+.card-img-overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--proj-light);
+
+  -webkit-box-shadow: 0px 0px 19px 0px var(--proj-light);
+  -moz-box-shadow: 0px 0px 19px 0px var(--proj-light);
+  box-shadow: 0px 0px 19px 0px var(--proj-light);
 }
 
-.project .card-body {
-  display: none;
+.card-img-overlay h3.card-text {
+  font-size: 20px;
+  font-weight: bold;
+  color: transparent;
+}
+
+.card-img-overlay p.card-text {
+  font-size: 14px;
+  color: transparent;
+}
+
+.card-img-overlay h3.card-text {
+  color: transparent;
+}
+
+.card-img-overlay:hover {
+  background-color: var(--proj-dark);
+}
+
+.card-img-overlay:hover h3.card-text {
+  color: var(--highlight-text);
+}
+
+.card-img-overlay:hover p.card-text {
+  color: var(--text-color);
 }
 
 /* ##################### */
