@@ -254,6 +254,11 @@ div.footer {
   width: 90px;
   height: 90px;
   object-fit: cover;
+  opacity: 0.4;
+}
+
+.skill:hover {
+  opacity: 1;
 }
 
 /* ##################### */
