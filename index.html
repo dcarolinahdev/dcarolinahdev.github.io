@@ -28,10 +28,10 @@
               <a class="nav-link" id="tab-about" href="#about" onclick="about();">About me</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" id="tab-skills" href="#skills">Skills</a>
+              <a class="nav-link" id="tab-skills" href="#skills" onclick="skills();">Skills</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" id="tab-portfolio" href="#portfolio">Portfolio</a>
+              <a class="nav-link" id="tab-portfolio" href="#portfolio" onclick="portfolio();">Portfolio</a>
             </li>
             <li class="nav-item">
               <a class="nav-link disabled" id="" aria-disabled="true">Blog</a>
@@ -39,7 +39,7 @@
           </ul>
     </div>
     <div class="div-section" id="home">
-        <img src="./assets/img/sky.jpg" alt="Background">
+        <img src="./assets/img/bg/sky.jpg" alt="Background">
         <div class="home-main">
             <div class="d-flex justify-content-center align-items-center">
                 <img class="me" src="./assets/img/profile_photo.jpeg" alt="me">
@@ -54,50 +54,109 @@
         </div>
     </div>
     <div class="div-section" id="about">
-        <img src="./assets/img/sky.jpg" alt="Background">
+        <img src="./assets/img/bg/sky.jpg" alt="Background">
         <div class="about-main">
             <h1>About me</h1>
-            <div id="carouselAbout" class="carousel slide">
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselAbout" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselAbout" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselAbout" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <p class="abc">¡Hi! I'm <strong>Diana Carolina Hernandez</strong>,
-                      a passionate software <strong>engineer</strong> with 3 years of
-                      industry experience. I'm passionate about creating technological
-                      solutions that improve the lives of people and businesses.</p>
+            <div class="flex-about">
+              <div class="d-flex justify-content-center align-items-center">
+                <img class="me" src="./assets/img/profile_photo.jpeg" alt="me">
+              </div>
+              <div id="carouselAbout" class="carousel slide">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselAbout" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselAbout" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselAbout" data-bs-slide-to="2" aria-label="Slide 3"></button>
                   </div>
-                  <div class="carousel-item">
-                    <p>My experience includes working with programming languages like Python and Ruby,
-                      as well as using technologies such as Django, Rails, Docker, Git, and
-                      relational databases. I take pride in working closely with my clients to
-                      understand their needs and create customized solutions that enable them to
-                      achieve their goals.</p>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <p class="abc">¡Hi! I'm <strong>Diana Carolina Hernandez</strong>,
+                        a passionate software <strong>engineer</strong> with 3 years of
+                        industry experience. I'm passionate about creating technological
+                        solutions that improve the lives of people and businesses.</p>
+                    </div>
+                    <div class="carousel-item">
+                      <p>My experience includes working with programming languages like Python and Ruby,
+                        as well as using technologies such as Django, Rails, Docker, Git, and
+                        relational databases. I take pride in working closely with my clients to
+                        understand their needs and create customized solutions that enable them to
+                        achieve their goals.</p>
+                    </div>
+                    <div class="carousel-item">
+                      <p>On this website, you'll find my skills and some of my projects (You can view all of them in my github site). If you're interested in working with me or have any
+                        questions, please don't hesitate to contact me. Thank you for visiting my site!!.</p>
+                    </div>
                   </div>
-                  <div class="carousel-item">
-                    <p>On this website, you'll find my skills and some of my projects (You can view all of them in my github site). If you're interested in working with me or have any
-                      questions, please don't hesitate to contact me. Thank you for visiting my site!!.</p>
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselAbout" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselAbout" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselAbout" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselAbout" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+              </div>
             </div>
         </div>
     </div>
     <div class="div-section" id="skills">
-        <h1>Skills</h1>
+        <img src="./assets/img/bg/sky.jpg" alt="Background">
+        <div class="skills-main">
+          <h1>Skills</h1>
+          <div class="frame-skills">
+            <img class="skill" src="./assets/img/skills/python.png" alt="Python">
+            <img class="skill" src="./assets/img/skills/django.png" alt="Django">
+            <img class="skill" src="./assets/img/skills/postgresql.png" alt="Postgresql">
+            <img class="skill" src="./assets/img/skills/mongo.png" alt="Mongo">
+            <img class="skill" src="./assets/img/skills/ruby.png" alt="Ruby">
+            <img class="skill" src="./assets/img/skills/rails.png" alt="Rails">
+            <img class="skill" src="./assets/img/skills/react.png" alt="React">
+          </div>
+        </div>
     </div>
     <div class="div-section" id="portfolio">
-        <h1>Portfolio</h1>
+        <img src="./assets/img/bg/sky.jpg" alt="Background">
+        <div class="portfolio-main">
+            <h1>Portfolio</h1>
+            <div class="frame-portfolio">
+
+              <div class="card project">
+                  <img src="./assets/img/portfolio/travel-site.png" class="card-img-top" alt="Travel Website">
+                  <div class="card-img-overlay">
+                    <h3 class="card-text">Travel Website</h3>
+                    <div class="d-flex">
+                      <span>HTML5</span>
+                      <span>CSS3</span>
+                      <span>javascript</span>
+                    </div>
+                  </div>
+              </div>
+
+              <div class="card project">
+                  <img src="./assets/img/portfolio/petshop.png" class="card-img-top" alt="Petshop">
+                  <div class="card-img-overlay">
+                    <h3 class="card-text">Petshop</h3>
+                    <div class="d-flex">
+                      <span>HTML5</span>
+                      <span>CSS3</span>
+                      <span>javascript</span>
+                    </div>
+                  </div>
+              </div>
+
+              <div class="card project">
+                  <img src="./assets/img/portfolio/ae.png" class="card-img-top" alt="Amazing Events">
+                  <div class="card-img-overlay">
+                    <h3 class="card-text">Amazing events</h3>
+                    <div class="d-flex">
+                      <span>HTML5</span>
+                      <span>CSS3</span>
+                      <span>javascript</span>
+                    </div>
+                  </div>
+              </div>
+
+            </div>
+        </div>
     </div>
     <div class="footer fixed-bottom d-flex justify-content-center align-items-center">
         <div>

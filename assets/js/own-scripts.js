@@ -36,3 +36,28 @@ function about() {
     div_about.classList.add("align-items-center");
 }
 
+function skills() {
+    let divs_section = document.getElementsByClassName("div-section");
+    for (let i=0; i < divs_section.length; i++){
+        divs_section[i].style.display = "none";
+    }
+
+    let div_skills = document.getElementById("skills");
+    div_skills.style.display = "flex";
+    div_skills.classList.add("flex-column");
+    div_skills.classList.add("justify-content-center");
+    div_skills.classList.add("align-items-center");
+}
+
+function portfolio() {
+    let divs_section = document.getElementsByClassName("div-section");
+    for (let i=0; i < divs_section.length; i++){
+        divs_section[i].style.display = "none";
+    }
+
+    let div_portfolio = document.getElementById("portfolio");
+    div_portfolio.style.display = "flex";
+    div_portfolio.classList.add("flex-column");
+    div_portfolio.classList.add("justify-content-center");
+    div_portfolio.classList.add("align-items-center");
+}
