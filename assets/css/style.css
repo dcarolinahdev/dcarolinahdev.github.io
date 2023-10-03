@@ -3,6 +3,7 @@
 ----------------------------*/
 :root {
   --highlight-text: #390C3E;
+  --badges: #86358f;
   --med-line: magenta;
 
   --link-hover-color: white;
@@ -313,6 +314,7 @@ div.footer {
 
 .card-img-overlay {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 
@@ -338,6 +340,16 @@ div.footer {
   color: transparent;
 }
 
+.card-img-overlay > div {
+  gap: 0.3rem;
+}
+
+.card-img-overlay span {
+  padding: 0rem 1rem;
+  border-radius: 5px;
+  color: transparent;
+}
+
 .card-img-overlay:hover {
   background-color: var(--proj-dark);
 }
@@ -348,6 +360,14 @@ div.footer {
 
 .card-img-overlay:hover p.card-text {
   color: var(--text-color);
+}
+
+.card-img-overlay:hover span {
+  background: var(--badges);
+  color: white;
+  -webkit-box-shadow: 0px 0px 19px 0px rgba(255, 255, 255, 0.3);
+  -moz-box-shadow: 0px 0px 19px 0px rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 0px 19px 0px rgba(255, 255, 255, 0.3);
 }
 
 /* ##################### */
