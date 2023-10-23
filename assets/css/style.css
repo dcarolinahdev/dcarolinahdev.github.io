@@ -122,8 +122,8 @@ div.footer {
 }
 
 .home-main img.me {
-  height: 100px;
-  width: 100px;
+  height: 260px;
+  width: 260px;
   object-fit: cover;
   border-radius: 50%;
 }
@@ -137,7 +137,11 @@ div.footer {
 .div-section h1 {
   color: var(--highlight-text);
   font-weight: bold;
-  font-size: 3.2rem;
+  font-size: 4rem;
+}
+
+.div-section h3 {
+  font-size: 3rem;
 }
 
 /* ##################### */
@@ -174,10 +178,14 @@ div.footer {
 }
 
 .about-main img.me {
-  height: 100px;
-  width: 100px;
+  height: 200px;
+  width: 200px;
   object-fit: cover;
   border-radius: 50%;
+}
+
+.about-main p {
+  font-size: 1.8rem;
 }
 
 .flex-about {
@@ -252,10 +260,35 @@ div.footer {
 }
 
 .skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  object-fit: cover;
+  font-weight: bold;
+  opacity: 0.4;
+}
+
+.skill.rb,
+.skill.ra {
+  color: rgb(140, 15, 15);
+}
+
+.skill.py,
+.skill.pg {
+  color: rgb(20, 62, 94);
+}
+
+.skill.mo {
+  color: rgb(76, 47, 20);
+}
+
+.skill.re {
+  color: rgb(8, 203, 203);
+}
+
+.skill img {
   width: 90px;
   height: 90px;
-  object-fit: cover;
-  opacity: 0.4;
 }
 
 .skill:hover {
