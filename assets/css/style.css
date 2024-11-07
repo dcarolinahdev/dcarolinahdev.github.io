@@ -92,7 +92,6 @@ div.footer {
 }
 
 .home-main {
-  width: 90%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -140,6 +139,11 @@ div.footer {
   font-size: 3.2rem;
 }
 
+.div-section > div {
+  width: 90%;
+  max-height: 80vh;
+}
+
 /* ##################### */
 
 #about {
@@ -154,8 +158,6 @@ div.footer {
 }
 
 .about-main {
-  width: 90%;
-
   background: rgba(255, 255, 255, 0.3);
   position: absolute;
   top: 50%;
@@ -222,8 +224,8 @@ div.footer {
 }
 
 .skills-main {
-  width: 90%;
-
+  overflow: auto;
+  
   background: rgba(255, 255, 255, 0.3);
   position: absolute;
   top: 50%;
@@ -321,8 +323,6 @@ div.footer {
 }
 
 .portfolio-main {
-  width: 90%;
-  max-height: 80vh;
   overflow: auto;
 
   background: rgba(255, 255, 255, 0.3);
