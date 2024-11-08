@@ -225,7 +225,7 @@ div.footer {
 
 .skills-main {
   overflow: auto;
-  
+
   background: rgba(255, 255, 255, 0.3);
   position: absolute;
   top: 50%;
@@ -344,75 +344,62 @@ div.footer {
 
 .frame-portfolio {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  /*align-items: center;*/
   flex-wrap: wrap;
   gap: 1rem;
-
-  width: 90%;
-  margin: 0 auto;
 }
 
-.project,
-.card-img-overlay {
-  width: 300px;
+.project {
+  width: 270px;
+}
+
+.project > img {
+  width: 100%;
+  object-fit: cover;
 }
 
 .card-img-overlay {
+  width: 75%;
+  height: 60%;
+  background-color:rgba(95, 158, 160, 0.644);
+  border-radius: 4px;
+  opacity: 0;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
-  background-color: var(--proj-light);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
-  -webkit-box-shadow: 0px 0px 19px 0px var(--proj-light);
+  /*-webkit-box-shadow: 0px 0px 19px 0px var(--proj-light);
   -moz-box-shadow: 0px 0px 19px 0px var(--proj-light);
-  box-shadow: 0px 0px 19px 0px var(--proj-light);
+  box-shadow: 0px 0px 19px 0px var(--proj-light);*/
 }
 
-.card-img-overlay h3.card-text {
-  font-size: 20px;
+.project h3.card-text {
+  font-size: 1.4rem;
   font-weight: bold;
-  color: transparent;
 }
 
-.card-img-overlay p.card-text {
-  font-size: 14px;
-  color: transparent;
+.project .sk {
+  display: flex;
+  gap: 2px;
 }
 
-.card-img-overlay h3.card-text {
-  color: transparent;
-}
-
-.card-img-overlay > div {
-  gap: 0.3rem;
-}
-
-.card-img-overlay span {
-  padding: 0rem 1rem;
-  border-radius: 5px;
-  color: transparent;
+.sk span {
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  background-color: rgba(160, 203, 203, 0.7);
+  font-size: 1rem;
 }
 
 .card-img-overlay:hover {
-  background-color: var(--proj-dark);
-}
-
-.card-img-overlay:hover h3.card-text {
-  color: var(--highlight-text);
-}
-
-.card-img-overlay:hover p.card-text {
-  color: var(--text-color);
-}
-
-.card-img-overlay:hover span {
-  background: var(--badges);
-  color: white;
-  -webkit-box-shadow: 0px 0px 19px 0px rgba(255, 255, 255, 0.3);
-  -moz-box-shadow: 0px 0px 19px 0px rgba(255, 255, 255, 0.3);
-  box-shadow: 0px 0px 19px 0px rgba(255, 255, 255, 0.3);
+  opacity: 1;
 }
 
 /* ##################### */
@@ -433,9 +420,8 @@ div.footer {
   .frame-skills {
     width: 85%;
   }
-  .project,
-  .card-img-overlay {
-    width: 350px;
+  .project {
+    width: 320px;
   }
 }
 
@@ -448,9 +434,8 @@ div.footer {
   .frame-skills {
     width: 75%;
   }
-  .project,
-  .card-img-overlay {
-    width: 370px;
+  .project {
+    width: 350px;
   }
 }
 
@@ -459,16 +444,14 @@ div.footer {
   .home-main {
     width: 600px;
   }
-  .project,
-  .card-img-overlay {
+  .project {
     width: 400px;
   }
 }
 
 /* xlarge pc: 1400 + (xl | col-xl-x) */
 @media only screen and (min-width: 1400px) {
-  .project,
-  .card-img-overlay {
+  .project {
     width: 500px;
   }
 }
